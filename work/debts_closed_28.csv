@@ -1,0 +1,4 @@
+id;component;title;severity;status;summary;urgency;target_sprint;url_tracker
+385595;record;[Record] crash du service si l'event de record_deleted arrive avant la fin du process de supression;G1 :  Major;Closed;;U0 - Blocking;;https://www.forge.orange-labs.fr:443/plugins/tracker/?aid=385595
+387551;uilibtest;UILibTest : bug dans menu.py;G1 :  Major;Closed;;U1 - Urgent;;https://www.forge.orange-labs.fr:443/plugins/tracker/?aid=387551
+395264;;[Jenkins] Coverage : traces activĂŠes sur o&m;G2 : Medium;Closed;;U2 - Medium;;https://www.forge.orange-labs.fr:443/plugins/tracker/?aid=395264

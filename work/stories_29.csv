@@ -1,0 +1,6 @@
+id;comment_phoenix;component;target_sprint_mib4;target_sprint_newbox;title;point;status;summary;url_tracker
+307961;;Orange et Moi;sprint 29;sprint 29;Voir le contraste avant de l'activer;3;Dev en cours;"En tant qu'utilisateur, je peux voir le contraste choisi avant de l'activer.
+
+L’écran avec la pop up de validation de choix du contraste doit prendre en compte le nouveau contraste choisi.
+La touche « retour » de la télécommande permet de revenir à l’ancien contraste.
+Ajouter un timer: sans action de l’utilisateur pendant environ 10 secondes, retour automatique à la page de réglage avec le contraste précédent.";https://www.forge.orange-labs.fr:443/plugins/tracker/?aid=307961

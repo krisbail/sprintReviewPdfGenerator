@@ -1,0 +1,7 @@
+id;comment_phoenix;component;target_sprint_mib4;target_sprint_newbox;title;point;status;summary;url_tracker
+211147;;Multi Media;sprint 21;Sprint 28;Intégration Médiacenter RQS7;8;Prête à publier;En tant qu'utilisateur je peux accéder à l'application Médiacenter. Il s'agit de l'intégration du mediacenter sur la chaîne de build des différents décodeurs concernés;https://www.forge.orange-labs.fr:443/plugins/tracker/?aid=211147
+262759;"Portage devant intégrer une capability ""wifi"" (la première de l'application, tirant le moteur des capabilities)";Orange et Moi;sprint 23;Sprint 28;Connexion Livebox;5;Prête à publier;"Cette section permet de consulter et de modifier le mode de connexion (Ethernet ou Wi-Fi) avec la Livebox.
+
+
+";https://www.forge.orange-labs.fr:443/plugins/tracker/?aid=262759
+388909;;TrackingReco;sprint 28;;Compléments tracking;5;Dev en cours;Ajouter les éléments de tracking jugés indispensables.;https://www.forge.orange-labs.fr:443/plugins/tracker/?aid=388909

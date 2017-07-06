@@ -1,0 +1,5 @@
+id;component;title;severity;status;summary;urgency;target_sprint;url_tracker
+391541;record;[PVR] la cover d'un enregistrement n'apparait pas sur les programmations;G1 :  Major;Closed;;U1 - Urgent;;https://www.forge.orange-labs.fr:443/plugins/tracker/?aid=391541
+391542;record;[PVR] Si plusieurs enregistrements ont la mĂŞme cover, la suppression d'1 enrg supprime la cover;G2 : Medium;Closed;;U2 - Medium;;https://www.forge.orange-labs.fr:443/plugins/tracker/?aid=391542
+391966;pvr;no images on desktop mode;G3 : Minor;Closed;;U2 - Medium;;https://www.forge.orange-labs.fr:443/plugins/tracker/?aid=391966
+397158;uilibtest;Bug dans TI suite Ă  la correction dans menu.py (#387551);G1 :  Major;Closed;;U1 - Urgent;;https://www.forge.orange-labs.fr:443/plugins/tracker/?aid=397158

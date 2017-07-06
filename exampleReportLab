@@ -1,0 +1,72 @@
+from django.contrib import admin
+from models import LatestRsl
+from io import BytesIO
+from reportlab.pdfgen import canvas
+from django.http import HttpResponse
+
+
+try:
+from cStringIO import StringIO
+    except ImportError:
+from StringIO import StringIO
+
+from reportlab.lib.units import inch
+from reportlab.lib.styles import getSampleStyleSheet, ParagraphStyle
+from reportlab.platypus import BaseDocTemplate, PageTemplate, Paragraph, Frame
+from reportlab.lib.pagesizes import letter
+
+def go(modeladmin, request, queryset):
+    response = HttpResponse(mimetype='application/pdf')
+    response['Content-Disposition'] = 'filename = testframe.pdf'
+
+    buffer = StringIO()
+    c = canvas.Canvas(buffer)
+    doc = BaseDocTemplate(buffer, showBoundary=1, leftMargin= 0.1*inch, rightMargin= 0.1*inch,
+                     topMargin= 0.1*inch, bottomMargin= 0.1*inch)
+
+    signfr = Frame(5.1*inch, 1.2*inch, 2.8*inch, 0.44*inch, showBoundary=1)
+    modelfr = Frame(3.6*inch, 4.6*inch, 2.8*inch, 0.44*inch, showBoundary=1)
+    doc.addPageTemplates([PageTemplate(id= 'rsl_frame', frames=[signfr, modelfr]),
+                         PageTemplate(id= 'rsl_frame2', frames=[signfr, modelfr])])
+
+    story = []
+
+    styles=getSampleStyleSheet()
+        styles.add(ParagraphStyle(name='Verdana9', fontName= 'Verdana', fontSize= 9))
+        styles.add(ParagraphStyle(name='VerdanaB10', fontName= 'VerdanaB', fontSize= 10))
+
+    for obj in queryset:
+        #1st frame
+        model = Paragraph(obj.make,styles["Verdana9"])
+        story.append(model)
+        modelfr.addFromList(story,c)
+
+        #2nd frame
+        signatory = Paragraph(obj.signatory,styles["VerdanaB10"])
+        story.append(signatory)
+        signfr.addFromList(story,c)
+
+    doc.build(story)
+    c.showPage()
+    c.save()
+    pdf = buffer.getvalue()
+    buffer.close()
+    response.write(pdf)
+return response
+
+
+
+doc = SimpleDocTemplate("products.pdf")
+Catalog = []
+header = Paragraph("Product Inventory", styles['Heading1'])
+Catalog.append(header)
+style = styles['Normal']
+headings = ('Product Name', 'Product Description')
+allproducts = [(p.name, p.description) for p
+                                    in Product.objects.all()]
+t = Table([headings] + allproducts)
+t.setStyle(TableStyle(
+                [('GRID', (0,0), (1,-1), 2, colors.black),
+                 ('LINEBELOW', (0,0), (-1,0), 2, colors.red),
+                 ('BACKGROUND', (0, 0), (-1, 0), colors.pink)]))
+Catalog.append(t) doc.build(Catalog)

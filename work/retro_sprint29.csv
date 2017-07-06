@@ -1,0 +1,16 @@
+To keep;vote
+les vacances.;1
+démo . s'est bien passé globalement ;0
+ doc de sprint review mieux automatisee , prends moins de temps;0
+To improve;vote
+C'est dure de reprendre le travail à un retour de congés général (pratiquement tout le monde absent 1 semaine) et de remettre le pied à l'étrier avec presque tout le monde en télétravail…;2
+Beaucoup de perte de temps sur des débats d'archi post-développement. Attention aux dérives. on est allé trop loin;4
+émo => problémes avec la telco newbox plus builds + demandes de bruno non pretes le jour même + demandes de bruno pas bien definies + accés fibre ( pb sur newbox) ;2
+modif sur resource faite pour le desktop la remontee du shawan a fait remonter une autre version de resource incompatible. une modif uniquement pour le desktop n'est a remonter dans le br.os que si une autre mr est presente qui a besoin d'etre remontee dans le master. quand on remonte une mr dans le br.os , il faudrait regarder ce que l'on remonte dans le br.os (autres shawan embarqués);1
+newbox => pas de flux ip sur autre chose que reseau adsl=> reussir a faire marcher sur livebox autre que adsl et sur core3. avoir une ligne fibre qui soit sur core3. + pb limite nombre de boites. rajouter des newbox sur les lignes va poser pb. ------------------------------------------- specialiser lignes fibres ?;2
+pertinence du daily scrum du vendredi ? un daily de 15 mns + un plus openbare. chrono ! baton de parole;3
+ rendre le doc de présentation de sprint entièrement automatiseé;1
+To resolve;vote
+" le travail sur le plateau nécessite un minimum de calme. il est normal qu'il y ait du bruit parfois ,(et même nécessaire de mettre un peu d'ambiance) mais si l'on a une réunion qui ne concerne qu'une personne , il serait préférable d’éviter de mettre le son du telephone a fond .et si possible de s'isoler dans une autre piéce ('il y en a une juste a coté de l'""open space).---→ demande dmi effectuée";
+ droits sur carte. complique a mettre en place et a avoir les bons droits. ----------------- seb envoie un lien qui indique les droits de sa carte...lien a tester. + actions a faire. http://10.170.210.132/wiki/index.php/Carte_Viaccess,_mais_encore ;2
+ forge encore bloqué ou rame . ;10

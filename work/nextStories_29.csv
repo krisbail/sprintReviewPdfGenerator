@@ -1,0 +1,39 @@
+id;comment_phoenix;component;target_sprint_mib4;target_sprint_newbox;title;point;status;summary;url_tracker
+250199;"Cette Story porte l'appel à la livebox, l’algorithme de calcul, le stockage du résultat côté médiation et l’utilisation de la résolution calculé dans les réservations.
+Cette Story porte la mise à jour de la LineUp lorsque le gestionnaire de ressource (orange-resource) signale une nouvelle résolution. Attention: de base, les réservations du gestionnaire de ressource prendrons bien compte la nouvelle résolution, mais la lineup ne sera pas régénéré par celui-ci. Pour autant, si l'utilisateur change d'éligibilité, le plan de service et le gestionnaire de ressource doivent être parfaitement aligné sur leur mise à jour.
+
+En cas de changement effectif de l’éligibilité stabilisée (voir story """"Fréquence de bascule de l'égibilité dynamique"""") après calcul, le gestionnaire de ressource (orange-resource) exposera une nouvelle valeur (SD/HD/...) sur son service dbus et enverra un signal dbus ""newResolution"": le live devra alors ""filtrer"" sa lineup selon la valeur.";Boot et Install;sprint 30;sprint 30;Gestion dynamique de l'éligibilité dans le Live, le PVR et l'EPG;8;Ready;"En tant que client Orange lorsque j’allume électriquement ou sors de veille mon décodeur, mon débit me permet de recevoir la TV dans la meilleure définition possible (HD si le débit le permet, ou SD sinon)
+
+";https://www.forge.orange-labs.fr:443/plugins/tracker/?aid=250199
+262752;"/!\ Vérifier que le signal TR069.PARAMETER_CHANGE de S@H est bien envoyé lorsque le champs ""configured mode"" est modifié
+
+Etudes API TVM, MCI S@H sur API upnp igd de la LB, coordination avec l'autodiag à porter.
+
+A chaque changement de """"qualité chaînes IP"""" via Orange & moi sur la STB par l'utilisateur,  l'AR met à jour  le champ ConfiguredMode dans le datamodel STB : ce paramètre est inventorié par Karma à chaque session TR-069.
+
+Ne pas oublier le relancement de l'algo côté Orange Resource au changement du ConfiguredMode (event PARAMETER_CHANGE)";Orange et Moi;sprint 30;sprint 30;Réglage de l'éligibilité dynamique;5;Ready;En tant que client Orange, si je trouve que je n’ai plus assez de débit internet, je peux choisir moi-même de passer  mes services LIVE et PVR en SD via un réglage dans l'interface TV Orange et moi | réseau | priorité TV/Internet, et revenir en mode Automatique.;https://www.forge.orange-labs.fr:443/plugins/tracker/?aid=262752
+262755;;Orange et Moi;sprint 31;sprint 31;Consultation du débit;3;Ready;"En tant que client Orange, je peux consulter le débit de ma ligne
+";https://www.forge.orange-labs.fr:443/plugins/tracker/?aid=262755
+346930;;Boot et Install;sprint 31;sprint 31;Migration NewBox vers Phoenix;0;Sans Objet;;https://www.forge.orange-labs.fr:443/plugins/tracker/?aid=346930
+367946;;Boot et Install;sprint 30;sprint 30;Fréquence de bascule de la résolution;8;Bloquée/Dépendance;En tant que client Orange, je souhaite avoir une définition stable (qui ne change pas tous les jours).;https://www.forge.orange-labs.fr:443/plugins/tracker/?aid=367946
+367947;Cette Story porte l'ajout de l’algorithme mulitstb à l'éligibilité dynamique déjà implémentée.;Environnement Multi Applicatif;sprint 31;sprint 31;multi-stb de l'éligibilité;3;Ready;En tant qu'utilisateur, je bénéficie d'une adaptation dans le temps de la résolution des chaînes selon le débit de ma ligne sur mes 2 décodeurs Tv;https://www.forge.orange-labs.fr:443/plugins/tracker/?aid=367947
+367952;Les valeurs dans Karma ne sont pas nécessairement les valeurs en cours sur la STB: pas de mise à jour immédiate de Karma suite à un changement de valeur de ces paramètres sur la STB, et pas de mécanisme d'espionnage de mise à jour d'une valeur du data model sur le boîtier pour avertir la couche applicative.;Boot et Install;sprint 31;sprint 31;infogestion de l'éligibilité des clients;3;Bloquée/Dépendance;En tant que Conseiller client, je peux consulter les données d'éligibilité et forcer le mode à TV SD / rétablir le mode Automatique sur le décodeur.;https://www.forge.orange-labs.fr:443/plugins/tracker/?aid=367952
+367953;;TrackingReco;sprint 30;sprint 30;Tracking sur l'éligibilité;3;Bloquée/Dépendance;"En tant qu'analyste QoS, je peux consulter les événements de tracking correspondant à un problème de récupération du débit de synchro par le décodeur pour calculer l'éligibilité dynamiquement.
+
+";https://www.forge.orange-labs.fr:443/plugins/tracker/?aid=367953
+376130;"Beluga fournit la résolution en cours sur orange-resource et la possibilité de modifier les enregistrements (usi+ metadata issus de l'epg lié au nouveau vecteur choisi) sur orange-record
+Core modifie le gestionnaire de conflit du live pour modifier des programmations (en plus de modifier le flux en lecture).
+
+Coté record:
+* nouvelle API ""updateRecord"" (ou ""downgrade"" ? à définir) pour modifier une programmation
+ -> argument ""usi"" optionnel : si present re-réservation avec cet USI sinon appel du live pour récupérer l'usi";PVR;sprint 31;sprint 31;Gestion de conflit avec reprogrammation;;Ready;"En tant que client Orange ADSL/VDSL, je peux regarder une chaîne live et modifier la programmation (enregistrement futur).
+
+Le système gère automatiquement les ressources en diminuant la qualité du flux et/ou de l'enregistrement si nécessaire, ou en me demandant de choisir entre les deux activités si une seule est possible.
+";https://www.forge.orange-labs.fr:443/plugins/tracker/?aid=376130
+384485;"En attente des designs Phoenix, se référer à "" legacy wordings"" : https://www.forge.orange-labs.fr/plugins/docman/?group_id=4499&action=show&id=77213
+
+cf. http://v-kunagi-soft.rd.francetelecom.fr:4567/Archi/Etudes/EDyn#Autodiag-S58-(-in%C3%A9gibilit%C3%A9-TV-)-
+
+Inclus la gestion des différentes versions de LB
+
+A splitter entre ""Déclenchement de l'autodiag S58"" et ""Autodiag S58""";Autodiag;sprint 30;sprint 30;Autodiag débit insuffisant;8;Bloquée/Dépendance;En tant que client Orange, si mon débit n’est pas suffisant pour bénéficier de la TV d’Orange, je bénéficie d'écrans m’informant de la situation et m'aidant à me dépanner moi-même;https://www.forge.orange-labs.fr:443/plugins/tracker/?aid=384485

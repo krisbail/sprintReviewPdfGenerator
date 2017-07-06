@@ -1,0 +1,26 @@
+id;comment_phoenix;component;target_sprint_mib4;target_sprint_newbox;title;point;status;summary;url_tracker;status_mib4;status_newbox
+262755;;Orange et Moi;sprint 31;sprint 31;Consultation du débit;3;Ready;"En tant que client Orange, je peux consulter le débit de ma ligne
+";https://www.forge.orange-labs.fr:443/plugins/tracker/?aid=262755;Ready;Ready
+342704;;Multi Media;sprint 23;sprint 31;Play To - DMR : gestion des interruptions;3;Qualif en cours;En tant qu'opérateur, je gère les priorités entre service TV en cours d'utilisation et réception d'une demande d'affichage de mes photos, audios et vidéos de l'un de mes périphériques connectés localement;https://www.forge.orange-labs.fr:443/plugins/tracker/?aid=342704;Qualif en cours;Dev en cours
+367947;Cette Story porte l'ajout de l’algorithme mulitstb à l'éligibilité dynamique déjà implémentée.;Environnement Multi Applicatif;sprint 31;sprint 31;multi-stb de l'éligibilité;3;Ready;En tant qu'utilisateur, je bénéficie d'une adaptation dans le temps de la résolution des chaînes selon le débit de ma ligne sur mes 2 décodeurs Tv;https://www.forge.orange-labs.fr:443/plugins/tracker/?aid=367947;Ready;Ready
+367952;Les valeurs dans Karma ne sont pas nécessairement les valeurs en cours sur la STB: pas de mise à jour immédiate de Karma suite à un changement de valeur de ces paramètres sur la STB, et pas de mécanisme d'espionnage de mise à jour d'une valeur du data model sur le boîtier pour avertir la couche applicative.;Boot et Install;sprint 31;sprint 31;infogestion de l'éligibilité des clients;3;Ready;En tant que Conseiller client, je peux consulter les données d'éligibilité et forcer le mode à TV SD / rétablir le mode Automatique sur le décodeur.;https://www.forge.orange-labs.fr:443/plugins/tracker/?aid=367952;Ready;Ready
+367953;;TrackingReco;sprint 31;sprint 31;Tracking sur l'éligibilité;3;Ready;"En tant qu'analyste QoS, je peux consulter les événements de tracking correspondant à un problème de récupération du débit de synchro par le décodeur pour calculer l'éligibilité dynamiquement.
+
+";https://www.forge.orange-labs.fr:443/plugins/tracker/?aid=367953;Ready;Ready
+376130;"Beluga fournit la résolution en cours sur orange-resource et la possibilité de modifier les enregistrements (usi+ metadata issus de l'epg lié au nouveau vecteur choisi) sur orange-record
+Core modifie le gestionnaire de conflit du live pour modifier des programmations (en plus de modifier le flux en lecture).
+
+Coté record:
+* nouvelle API ""updateRecord"" (ou ""downgrade"" ? à définir) pour modifier une programmation
+ -> argument ""usi"" optionnel : si present re-réservation avec cet USI sinon appel du live pour récupérer l'usi
+
+Connecteurs à modifier:
+""Rajouter l'epgId et l'extraire du DBusArgument""
+* wanrcs
+* epg
+* desk
+
+/!\ Attention à l'impact sur les TI, il devrait y en avoir sur la bascule de source du live en cas de conflit, qui de fait vont échouer puisque ce sera l'enregistrement qui viendra à être modifié";PVR;sprint 31;sprint 31;Gestion de conflit avec reprogrammation;8;Ready;"En tant que client Orange ADSL/VDSL, je peux regarder une chaîne live et modifier la programmation (enregistrement futur).
+
+Le système gère automatiquement les ressources en diminuant la qualité du flux et/ou de l'enregistrement si nécessaire, ou en me demandant de choisir entre les deux activités si une seule est possible.
+";https://www.forge.orange-labs.fr:443/plugins/tracker/?aid=376130;Ready;Ready

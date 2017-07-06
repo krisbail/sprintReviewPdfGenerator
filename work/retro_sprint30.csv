@@ -1,0 +1,40 @@
+"super , a garder",à améliorer,nous allons trouver une solution pour ne pas recommencer
+Les études complexes réfléchies à plusieurs. (ex: reprog),C'est quand la présentation docker ?,Accepter une MR sans qu'elle n'ait été testée sur STB par le dév et l'un des relecteurs
+les congés du mois de mai,"Diffuser le docker cross compiler (présentation/formation/ammélioration de l'outil)
+
+action a prendre par fred","Perte de Ludovic côté SAH, nécessaire d'avoir un correspondant technique à la hauteur de ce qu'il pouvait être
+
+déja remonté , a insister car pas de solution trouvée pour l'instant"
+"Fabien (Relecture MRs, suivi des tests d'intégration ...)
+
+biseau remplacé pas de rupture.(mi aout ??)",eviter de passer des mr en force le vrendredi soir sans tester correctement,"Corriger un bug ""urgent"" Qml sans tester avec le tester qml et la stb"
+"Automatiser la maj du DebtTracker, de QC, du Backlog OForge, du rapport c'est cool, on continue patiemment!
+
+remonter les pbs rencontrés.",c'est de la responsabilite du porteur de la mr de bien écrire la MR.(détailler au mieux),"Arrêt du BugTracker OForge en plein milieu de sprint
+
+ne rien faire en milieur de sprint qui impacte l'ensemble des mellees."
+"Suppression de la Forge pour les bugs, plus besoin de faire des synchronisations à répétition (fait par Isa)
+",Mieux décrire les tests manuel à passer dans la MR et les constats à observer,"MR trop grosses contenant plusieurs sujets
+
+diminuer taille mr"
+"auto-attribution des tâches par chacun, sans la maîtresse","maj des Issues gitlab (porteur, mr liées,...) pour absorber le TT massif
+
+pour les etudes on va dans le backilog","Attention de bien prendre en compte l'ensemble des remarques d'une MR. A proscrire la phrase ""Je vais créer une dette technique"" :'(
+
+
+cela depends de la nature de la DT.ne pas faire de DT si c'est une remarque lieé aux devs en cours et a la MR."
+docker c'est chouette =&gt; quel gain de temps !,Les relecteurs doivent penser au fait que le dev n'a peut être pas pensé à tout.,Pas d'intégrateur en septembre ?
+"Formation de Yan à Blagnac (Merci).
+Bientôt Cédric (à programmer)
+
+",Parfois les PO ne sont pas à jour sur les stories livrées dans les sprints précédents,
+Le QML est plus facile à développer via un tester,"Simplifier le Backlog : poids remplace moscow+release+les 3 stbs
+
+se baser sur la businessvalue",
+Le VPN &amp; citrix e-buro pour le télétravail + travail au bureau,Les relecteurs devraient préciser s'ils ont pu tout tester ou indiquer ce qui n'a pu l'être.,
+L'organisation du code du PVR a un meilleure visage.,"afficher en retro les points réalisés.
+",
+stability newbox sur r&amp;a toulouse,"attribuer nbr points à l""étude",
+Le télétravail,lors des dailies prévenir si pb pour réaliser taches sur laquelle on s'est engagé.,
+"streamer r&amp;a
+coupures flux , plus droits avec cartes =&gt; étudier et voir si solution de rennes meilleure ?",faire attention a s'affecter les issues / story /bugs pour pouvoir faire le point individuelsl lors des daylies,

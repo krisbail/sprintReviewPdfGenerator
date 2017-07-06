@@ -1,0 +1,7 @@
+Defect ID;Status;Urgency;Severity;Team;Assigned To;Detected in Cycle;Target Cycle;Summary;Component detection version;Component correction version;Reproductibility %
+1208;Fixed;U1-Urgent;G1-Major;Beluga;bdxx7333;GP STB4 Phoenix R1S28;GP STB4 Phoenix R1S29;[FUT][MEDIACENTER] [régression] sur lecture Divx et autres formats;Phoenix R1S28;;100
+1270;Fixed;U1-Urgent;G1-Major;Beluga;ehli6263;GP STB4 Phoenix R1S26.2;GP STB4 Phoenix R1S29;[PVR] - Perte du picto CSA lors d'enregistrement d'un épisode de série et code confidentiel non demandé;GP STB4 Phoenix R1S26.2;;30
+1345;Fixed;U2-Medium;G1-Major;Beluga;maub6584;GP STB4 Phoenix R1S27;GP STB4 Phoenix R1S29;"[Tracking] [PVR] Si aucun enregistrement (ou programmation) n'est présent sur la homepage PVR, l'évènement ""/pvr/manualsched/view"" n'est jamais remonté";Phoenix R1S27;;100
+1347;Fixed;U2-Medium;G2-Medium;Beluga;maub6584;GP STB4 Phoenix R1S27;GP STB4 Phoenix R1S29;"[Tracking] [PVR] Mauvais nom de paramètre pour l'évènement ""/pvr/schedule/del"" : ""rec_id"" au lieu de ""sched_id""";Phoenix R1S27;;100
+1364;Fixed;U1-Urgent;G1-Major;Beluga;;GP STB4 Phoenix R1S28;GP STB4 Phoenix R1S29;[Boot et Install - Migration] [FUT] - Les covers des enregistrements ne sont parfois pas récupérées suite à une migration;Phoenix R1S28;;25
+1393;Fixed;U2-Medium;G2-Medium;Beluga;jcnt7231;GP STB3 Phoenix R1S28;GP STB3 Phoenix R1S29;[PVR] - Appui sur touche P+ pendant la lecture d'un enregistrement;Phoenix R1S28;;

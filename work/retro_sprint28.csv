@@ -1,0 +1,26 @@
+To keep;commentaire
+chouette idée ce tableau... (3 votes) ;
+Les TIs de la mêlée presque sans échec... (3 votes) ;
+la cooperation dans l'équipe. (3 votes) ;
+le travail de ju , fred et seb sur le QML (règles) Sera idealement complété par un outil auto de vérif (me tarde de le voir arriver)  (3 votes);faisable dans le trigger mais reste des bugs liés a qtcreator. cible l'avoir dans qtcreator (au mieux) et surtout dans la mr.
+ apporter des viennoiseries :-) @Mathias... (1 votes);
+Démo Dakota (1 votes);
+venue de mari noêl sur le site et nicolas (3 votes);
+monter en compétence sur la lib egl (2 votes);
+To improve;commentaire
+Les longs points Projet/IVA du lundi (mais il y a du mieux) redondance. horaires.(1 votes);doubles réunions de bug le lundi et mardi à réévaluer. revoir avec isa. 
+Merger trop vite pour ne pas re-re-re-demander un rebase (3 votes); gardien du temple pour les mr-bros.
+Les tests Mediacenter (mais on en voit le bout) (2 votes); chiffrage nouveau mediacenter.
+Creer une page Wiki (Tips and tricks) pour tous les collègues qui ont des super idées ou outils pour aider notre quotidien (je les perds dans les mails)(1 votes);nico renvoie le lien. on les mets dedans. 
+ trop de sprint de bug. mélanger bugs et evols.(3 votes);le contexte a fait que nous nous sommes retrouvés avec beaucoup de bugs car beaucoup d'evols et moins de prise en compte des bugs. ce qui explique le nombre de bugs lors des derniers sprints. grosse demande faite sur le fonctionnel a tout pris debut janvier. désormais rythme plus partagé entre bugs et evols. équilibrer plus entre devs/bugs/etudes
+la mise en place du serveur de flux - outil ok mais problème à la diffusion des flux (2 votes);
+arrêter de tester le media center . juste vérifier qu'il n'y a pas de regression mais ne plus tester les fonctionnalités. (3 votes);
+To resolve;commentaire
+orangeforge plantages en fin de semaine sur git et orangeforge..etat git ? (plantages en plein commit)(7 votes);voir autre remarque sur même sujet
+ soumettre une br.os et partir en conges plusieurs jours sans definir de responsable en cas de refus pour rappel les br.os s'appuient sur des projets master donc une mr br.os qui bugge veut dire des projets en master qui buggent cas d'une mr br.os qui bloquait tous les autres.(4 votes);si un composant plante , celui qui est impacté a le doit de faire du cherry pick. être vigilant sur ti. si beluga impacté , il faut un relecteur beluga du travail fait par sprint box ou core. les responsables du domaine peuvent rejeter ou demander a etre en relecture. Voir ce que l'on peut mettre dans le README ou warning sur la MR sur le push gitlab. voir dans orangeimage comment c'est fait.
+"- positiver les titres des listes (esprit Scrum) - ex : \""ce qui va\"" et \""ce que l'on veut améliorer\"") (1 votes)";
+ le cppcheck ne donne pas les memes resultats en local et sur jenkins(4 votes);voir celui de buildroot . voir avec cedric. 
+ Embouteillages lors des remontées de sha-1 dans le br-os (spécialement pour la libphoenixwidgets) mr parfois remontées une par une au fils de l'eau. cas ou une melee met dans le br.os le travail de tout le monde sans s'assurer de la cohérence.(2 votes);a remonter en inter-melee. 
+ pousser de grosses modifs importantes . 5 Projets en force (ive -record -plugin etc...) avec une seule validation par l'equipe ------------- idem dessus (3 votes);
+jenkins temps de build enormes en fin de sprint. + pb survenus sur la forge deux jours a la fin du sprint goulet d'etranglement==> fiabilite orangeforge ? manque de moyen => ouil pourtant indispensable et devant etre fiable (synchro) (2 votes);ligne budgétaire ouverte. faire le pull origin master pas sur oforge.
+ Débuter un projet comme Phoenix sans vérifier le comportement des fonts versions livrées incorrectes.;travaux en cours pour corriger ce problème a prendre en compte pour nouveaux projets. faire pour newbox et newbox international. (chiffré dans étude arizona)

@@ -1,0 +1,8 @@
+id;comment_phoenix;component;target_sprint_mib4;target_sprint_newbox;title;point;status;summary;url_tracker
+299042;"* S@H signal HDD_FULL : renvoie le media_id
+=> donc notification à la réception du signal";PVR;sprint 29;Sprint 29;Enregistrement incomplet par manque d'espace disque;5;Ready;En tant qu'utilisateur je suis averti lorsqu'un enregistrement est incomplet;https://www.forge.orange-labs.fr:443/plugins/tracker/?aid=299042
+307961;;Orange et Moi;sprint 29;Sprint 29;Voir le contraste avant de l'activer;3;Ready;"En tant qu'utilisateur, je peux voir le contraste choisi avant de l'activer.
+
+L’écran avec la pop up de validation de choix du contraste doit prendre en compte le nouveau contraste choisi.
+La touche « retour » de la télécommande permet de revenir à l’ancien contraste.
+Ajouter un timer: sans action de l’utilisateur pendant au moins 5 secondes, retour automatique à la page de réglage avec le contraste précédent.";https://www.forge.orange-labs.fr:443/plugins/tracker/?aid=307961

@@ -1,0 +1,93 @@
+id;comment_phoenix;component;target_sprint_mib4;target_sprint_newbox;title;point;status;summary;url_tracker;status_mib4;status_newbox
+211138;;Autodiag;sprint 21;sprint 30;S04 : aide à l'autorésolution lors d'un problème d'accès aux plateformes;13;Prête à publier;En tant qu'operateur, je veux surveiller les conditions d'accès réseau, afin de prévenir l'utilisateur en cas de problème;https://www.forge.orange-labs.fr:443/plugins/tracker/?aid=211138;Prête à publier;En Etude
+250199;"Cette Story porte l'appel à la livebox, l’algorithme de calcul, le stockage du résultat côté médiation et l’utilisation de la résolution calculé dans les réservations.
+Cette Story porte la mise à jour de la LineUp lorsque le gestionnaire de ressource (orange-resource) signale une nouvelle résolution. Attention: de base, les réservations du gestionnaire de ressource prendrons bien compte la nouvelle résolution, mais la lineup ne sera pas régénéré par celui-ci. Pour autant, si l'utilisateur change d'éligibilité, le plan de service et le gestionnaire de ressource doivent être parfaitement aligné sur leur mise à jour.
+
+En cas de changement effectif de l’éligibilité stabilisée (voir story """"Fréquence de bascule de l'égibilité dynamique"""") après calcul, le gestionnaire de ressource (orange-resource) exposera une nouvelle valeur (SD/HD/...) sur son service dbus et enverra un signal dbus ""newResolution"": le live devra alors ""filtrer"" sa lineup selon la valeur.
+
+Suivi de la mise à disposition du serveur tvm :http://ctv.rd.francetelecom.com/redmine/issues/4306";Boot et Install;sprint 30;sprint 30;Gestion dynamique de l'éligibilité dans le Live, le PVR et l'EPG;8;Dev en cours;"En tant que client Orange lorsque j’allume électriquement ou sors de veille mon décodeur, mon débit me permet de recevoir la TV dans la meilleure définition possible (HD si le débit le permet, ou SD sinon)
+
+";https://www.forge.orange-labs.fr:443/plugins/tracker/?aid=250199;Dev en cours;Dev en cours
+262752;"/!\ Vérifier que le signal TR069.PARAMETER_CHANGE de S@H est bien envoyé lorsque le champs ""configured mode"" est modifié
+
+Etudes API TVM, MCI S@H sur API upnp igd de la LB, coordination avec l'autodiag à porter.
+
+A chaque changement de """"qualité chaînes IP"""" via Orange & moi sur la STB par l'utilisateur,  l'AR met à jour  le champ ConfiguredMode dans le datamodel STB : ce paramètre est inventorié par Karma à chaque session TR-069.
+
+Ne pas oublier le relancement de l'algo côté Orange Resource au changement du ConfiguredMode (event PARAMETER_CHANGE)";Orange et Moi;sprint 30;sprint 30;Réglage de l'éligibilité dynamique;5;Dev en cours;En tant que client Orange, si je trouve que je n’ai plus assez de débit internet, je peux choisir moi-même de passer  mes services LIVE et PVR en SD via un réglage dans l'interface TV Orange et moi | réseau | priorité TV/Internet, et revenir en mode Automatique.;https://www.forge.orange-labs.fr:443/plugins/tracker/?aid=262752;Dev en cours;Dev en cours
+265156;;PVR;sprint 17;sprint 30;Arrêter un enregistrement en cours depuis le menu (expert);3;Prête à publier;En tant qu'utilisateur, je peux arrêter un enregistrement en cours en mode expert;https://www.forge.orange-labs.fr:443/plugins/tracker/?aid=265156;Prête à publier;Dev en cours
+303452;;Autodiag;sprint 23;sprint 30;S01 : aide à l'auto-résolution de problème sur la connexion filaire;5;Prête à publier;En tant qu'opérateur j'accompagne le client pour qu'il puisse diagnostiquer et corriger lui même ses problèmes de connexion au réseau;https://www.forge.orange-labs.fr:443/plugins/tracker/?aid=303452;Prête à publier;En Etude
+303949;;Autodiag;sprint 23;sprint 30;L11 : suggestion d'aide à l'auto-résolution lors de la perte du flux LIVE;8;Prête à publier;;https://www.forge.orange-labs.fr:443/plugins/tracker/?aid=303949;Prête à publier;En Etude
+322685;"Etude gestion de contexte : http://v-kunagi-soft:4567/Archi/Etudes/OLED-GestionContexte
+Etude portage MIB4 : http://v-kunagi-soft:4567/Archi/Etudes/OLED-MIB4
+";PVR;sprint 21;sprint 30;Gestion de l'afficheur en facade pour les services PVR;2;Prête à publier;En tant qu'utilisateur je peux avoir sur l'OLEd des informations sur l'application courante et des notifications temporaires lors d'événements afin de suivre l'état de ma boite;https://www.forge.orange-labs.fr:443/plugins/tracker/?aid=322685;Prête à publier;Dev en cours
+322686;"Etude gestion de contexte : http://v-kunagi-soft:4567/Archi/Etudes/OLED-GestionContexte
+Etude portage MIB4 : http://v-kunagi-soft:4567/Archi/Etudes/OLED-MIB4
+";Multi Media;sprint 21;sprint 30;Gestion de l'afficheur en facade pour les services Mediacenter;3;Prête à publier;En tant qu'utilisateur je peux avoir sur l'OLEd des informations sur l'application courante et des notifications temporaires lors d'événements afin de suivre l'état de ma boite;https://www.forge.orange-labs.fr:443/plugins/tracker/?aid=322686;Prête à publier;Dev en cours
+322688;"Etude gestion de contexte : http://v-kunagi-soft:4567/Archi/Etudes/OLED-GestionContexte
+Etude portage MIB4 : http://v-kunagi-soft:4567/Archi/Etudes/OLED-MIB4
+";Orange et Moi;sprint 21;sprint 30;Gestion de l'afficheur en facade pour les services Orange et moi;3;Prête à publier;En tant qu'utilisateur je peux avoir sur l'OLEd des informations sur l'application courante et des notifications temporaires lors d'événements afin de suivre l'état de ma boite;https://www.forge.orange-labs.fr:443/plugins/tracker/?aid=322688;Prête à publier;Dev en cours
+332162;"Etude gestion de contexte : http://v-kunagi-soft:4567/Archi/Etudes/OLED-GestionContexte
+Etude portage MIB4 : http://v-kunagi-soft:4567/Archi/Etudes/OLED-MIB4
+
+DMR: design OLED différent car reprise du comportement iso Newbox
+
+Liste des affichages OLED MIB4 :
+https://www.forge.orange-labs.fr/plugins/docman/?group_id=4499&action=show&id=63829";PVR;sprint 23;sprint 30;Oled Player PVR/DMR;3;Prête à publier;En tant qu'utilisateur je peux avoir sur l'Oled des informations lors de la lecture et des notifications temporaires lors d'événements afin de suivre l'état de ma boîte;https://www.forge.orange-labs.fr:443/plugins/tracker/?aid=332162;Prête à publier;Dev en cours
+346930;"Aujourd'hui, les noms des métadonnées custom ne sont pas alignées lors de la migration entre la version GWT et Phoenix.
+Important : Si les métadonnées concernant les vecteurs et définitions ne sont plus accessible, ces records seront supprimés au ""startsoon"".
+";Boot et Install;;sprint 30;Migration NewBox vers Phoenix;8;Sans Objet;;https://www.forge.orange-labs.fr:443/plugins/tracker/?aid=346930;Sans Objet;En Etude
+367946;"Un exemple, ""IP_Bw_Ratio"":1000
+
+Si le débit d’un client est de 7 Mbps ADSL : 
+
+SD.ipVideoBitRAvailable = 7/1-0.5 = 6.5
+
+HD.ipVideoBitRAvailable = 7/1-2.5 = 4.5
+
+NB -  il faut donc calculer les 2 pour faire ensuite les tests par rapport aux seuils 
+
+SD.ipVideoBitRAvailable < SD.IP_Max_BitR (=2.8 M) ? Non (-> le client est éligible TV, SD a minima)
+
+HD.ipVideoBitRAvailable < HD.IP_Max_BitR (5,6 M) ? Oui, le client est éligible SD (et non éligible HD)
+
+2/ Si le débit d’un client est de 9,5 Mbps ADSL :
+
+SD.ipVideoBitRAvailable = 9.5/1-0.5 = 9
+
+HD.ipVideoBitRAvailable = 9.5/1-2.5 = 7
+
+SD.ipVideoBitRAvailable < SD.IP_Max_BitR (=2.8 M) ? Non (-> le client est éligible TV, SD a minima)
+
+HD.ipVideoBitRAvailable < HD.IP_Max_BitR (5,6 M) ? Non
+
+HD.ipVideoBitRAvailable >= HD.IP_Max_BitR ? Oui, le client est éligible HD";Boot et Install;sprint 30;sprint 30;Fréquence de bascule de la résolution;8;Dev en cours;En tant que client Orange, je souhaite avoir une définition stable (qui ne change pas tous les jours).;https://www.forge.orange-labs.fr:443/plugins/tracker/?aid=367946;Dev en cours;Dev en cours
+384485;"En attente des designs Phoenix, se référer à "" legacy wordings"" : https://www.forge.orange-labs.fr/plugins/docman/?group_id=4499&action=show&id=77213
+
+cf. http://v-kunagi-soft.rd.francetelecom.fr:4567/Archi/Etudes/EDyn#Autodiag-S58-(-in%C3%A9gibilit%C3%A9-TV-)-
+
+Inclus la gestion des différentes versions de LB
+
+A splitter entre ""Déclenchement de l'autodiag S58"" et ""Autodiag S58""";Autodiag;sprint 30;sprint 30;S58 : aide à l'autorésolution lors d'un problème de débit insuffisant;8;En etude;En tant que client Orange, si mon débit n’est pas suffisant pour bénéficier de la TV d’Orange, je bénéficie d'écrans m’informant de la situation et m'aidant à me dépanner moi-même;https://www.forge.orange-labs.fr:443/plugins/tracker/?aid=384485;En etude;En Etude
+404781;"Oter les wordings présent dans phoenix widgets (deux fichiers, sept entrées) et les déporter dans les applis qui utilisent les composants concernés
+=> Dépréciation de la PopupYesNo et création d'une ConfirmPopup
+ou
+=> Tout péter: on renomme PopupYesNo en ConfirmationPopup
+
+br.os:
+* lupdate et lrelease pas dispo côté buildroot
+
+O&M:
+* Certains wordings ne sont pas traduits => visiblement ce qui est présent dans les modèles cpp";Orange et Moi;sprint 30;sprint 30;Multilangues O&M;0;En etude;En tant qu'utilisateur, le service Orange et moi de la TV d'Orange m'est présenté dans la langue de mon pays.;https://www.forge.orange-labs.fr:443/plugins/tracker/?aid=404781;En etude;En Etude
+405234;"Discussions du 7/6/17:
+* Pas de gestion du workflow en fonction de la LB en face de la STB => gestion des erreurs (absence de l'API, échec de l'appel)
+* Ajouter la gestion de la capability HAS_HTTP_REQUEST pour le connector newbox (sinon échec à la compilation puisque méthode non présente dans le xml)
+* Vérifier les testers pour le cas des images
+
+NB: CA2: images stb4 à remplacer par stb3 devrait faire référence à un US spécifique STB3 et non à un US Livebox 2/3 ?
+NB: gestion de la différence des images uniquement à la compilation, pas au runtime
+
+NB: Demander des images générique pour la Livebox (dans le cas d'une perte de connexion avec la livebox, il n'est pas possible de savoir si c'est une 2, 3 ou 4)
+=> Réglé avec D&U: mosaïque des boites
+
+NB: Pas de bouton [i] sur la livebox 2, seulement sur la 3 et la 4. Dans le diagnostique S01-05, prévoir un message prévoyant cette éventualité.";Autodiag;sprint 30;sprint 30;autodiag pour Livebox 2 et 3;3;En etude;En tant qu'utilisateur, je bénéficie d'autodiags gérant les spécificités des Livebox 2 et 3;https://www.forge.orange-labs.fr:443/plugins/tracker/?aid=405234;En etude;En Etude
